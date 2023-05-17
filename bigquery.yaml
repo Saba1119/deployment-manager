@@ -1,0 +1,14 @@
+resources:
+- name: saba
+  type: bigquery.v2.table
+  properties:
+    tableReference:
+      projectId: develop-375210
+      datasetId: saba
+      tableId: saba
+    schema:
+      fields:
+      - name: column_1
+        type: STRING
+      - name: column_2
+        type: INTEGER

@@ -1,0 +1,5 @@
+resources:
+- name: my-bucket-saba
+  type: storage.v1.bucket
+  properties:
+    name: my-bucket
