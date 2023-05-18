@@ -7,7 +7,7 @@ data = {
     'size': 10,
     'value': 'pd-standard',
     'deletion_protection_enabled': 'true',
-    'physical_block_sixe_byte': '4096'
+    'physical_block_size_byte': 4096
 }
 
 # Load the Jinja template file
