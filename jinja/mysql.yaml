@@ -1,0 +1,25 @@
+resources:
+- name: {{ instance_name }}
+  type: sqladmin.v1beta4.instance
+  properties:
+    region: {{ region_name }}
+    zone: {{ zone }}
+    databaseVersion: {{ database_version }}
+    settings:
+      tier: {{ instance_tier }}
+      backupConfiguration:
+        enabled: {{ backup_enabled }}
+      ipConfiguration:
+        ipv4Enabled: {{ ipv4_enabled }}
+      storageAutoResize: {{ storage_auto_resize }}
+      storageSize: {{ storage_size }}
+      storageType: {{ storage_type }}
+      userLabels:
+        environment: {{ environment }}
+      rootPassword: {{ root_password }}
+      dataProtectionOptions:
+        enabled: {{ data_protection_enabled }}
+      maintenanceWindow:
+        hour: {{ maintenance_hour }}
+        day: {{ maintenance_day }}
+      # Choose the desired machine type: db-f1-micro, db-g1-small, db-n1-standard-1, db-n1-standard-2, db-n1-standard-4, db-n1-standard-8, db-n1-standard-16, db-n1-standard-32, db-n1-standard-64, db-n1-standard-96, db-n1-highmem-2, db-n1-highmem-4, db-n1-highmem-8, db-n1-highmem-16, db-n1-highmem-32, db-n1-highmem-64, db-n1-highmem-96, db-n1-highcpu-2, db-n1-highcpu-4, db-n1-highcpu-8, db-n1-highcpu-16, db-n1-highcpu-32, db-n1-highcpu-64, db-n1-highcpu-96
