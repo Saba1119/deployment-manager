@@ -1,0 +1,27 @@
+resources:
+- name: sabanatarajan
+  type: sqladmin.v1beta4.instance
+  properties:
+    region: us-central1
+    zone: us-central1-a
+    databaseVersion: MYSQL_8_0
+    settings:
+      tier: db-f1-micro
+      backupConfiguration:
+        enabled: true
+      ipConfiguration:
+        ipv4Enabled: true
+      locationPreference:
+        zone: us-central1-a
+      storageAutoResize: true
+      storageSize: 10
+      storageType: SSD
+      userLabels:
+        environment: production
+      rootPassword: my-root-password
+      dataProtectionOptions:
+        enabled: true
+      maintenanceWindow:
+        hour: 2
+        day: 1
+      # Choose the desired machine type: db-f1-micro, db-g1-small, db-n1-standard-1, db-n1-standard-2, db-n1-standard-4, db-n1-standard-8, db-n1-standard-16, db-n1-standard-32, db-n1-standard-64, db-n1-standard-96, db-n1-highmem-2, db-n1-highmem-4, db-n1-highmem-8, db-n1-highmem-16, db-n1-highmem-32, db-n1-highmem-64, db-n1-highmem-96, db-n1-highcpu-2, db-n1-highcpu-4, db-n1-highcpu-8, db-n1-highcpu-16, db-n1-highcpu-32, db-n1-highcpu-64, db-n1-highcpu-96  

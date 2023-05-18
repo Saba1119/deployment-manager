@@ -1,0 +1,26 @@
+resources:
+- name: sabanatarajan
+  type: sqladmin.v1beta4.instance
+  properties:
+    region: us-central1
+    zone: us-central1-a
+    databaseVersion: POSTGRES_14
+    settings:
+      tier: db-f1-micro
+      backupConfiguration:
+        enabled: true
+      ipConfiguration:
+        ipv4Enabled: true
+      locationPreference:
+        zone: us-central1-a
+      storageAutoResize: true
+      storageSize: 10
+      storageType: SSD
+      userLabels:
+        environment: saba
+      rootPassword: my-root-password
+      dataProtectionOptions:
+        enabled: true
+      maintenanceWindow:
+        hour: 4
+        day: 3

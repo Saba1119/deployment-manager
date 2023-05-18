@@ -1,0 +1,13 @@
+# persistent-disk.yaml
+
+resources:
+- name: saba
+  type: compute.v1.disk
+  properties:
+    zone: us-central1-a
+    sizeGb: 101
+    type: projects/develop-375210/zones/us-central1-a/diskTypes/pd-standard
+    # diskEncryptionKey:
+    #   rawKey: QWxhZGRpbjpPcGVuU2VzYW1l
+    deletionProtection: true
+    physicalBlockSizeBytes: 4096
