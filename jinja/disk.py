@@ -4,7 +4,7 @@ from jinja2 import Template, Environment, FileSystemLoader
 data = {
     'name': 'saba',
     'zone': 'us-central1-a',
-    'size': 10
+    'size': 10,
     'value': 'pd-standard',
     'deletion_protection_enabled': 'true',
     'physical_block_sixe_byte': '4096'
