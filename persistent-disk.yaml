@@ -5,7 +5,7 @@ resources:
   type: compute.v1.disk
   properties:
     zone: us-central1-a
-    sizeGb: 101
+    sizeGb: 10
     type: projects/develop-375210/zones/us-central1-a/diskTypes/pd-standard
     # diskEncryptionKey:
     #   rawKey: QWxhZGRpbjpPcGVuU2VzYW1l
