@@ -4,8 +4,8 @@ resources:
   properties:
     zone: {{ zone }}
     sizeGb: {{ size }}
-    type: {{ value }}
+    diskTypes: {{ value }}
     # diskEncryptionKey:
     #   rawKey: QWxhZGRpbjpPcGVuU2VzYW1l
     deletionProtection: {{ deletion_protection_enabled }}
-    physicalBlockSizeBytes: {{ physical_block_sixe_byte }}
+    physicalBlockSizeBytes: {{ physical_block_size_byte }}
